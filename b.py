@@ -10,7 +10,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 
 # Set the environment variable
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCtUPNmtHqHX63eDT-6H2LBcfHEN9M0Ab8"
+os.environ["GOOGLE_API_KEY"] = "enter here"
 
 # Retrieve the API key from the environment variable
 api_key = os.getenv("GOOGLE_API_KEY")
@@ -78,7 +78,7 @@ def user_input(user_question):
 
 def main():
     st.set_page_config("Chat PDF")
-    st.header("Chat with PDF using Gemini 💁")
+    st.header("Chat with PDF ")
 
     user_question = st.text_input("Ask a Question from the PDF Files")
 
